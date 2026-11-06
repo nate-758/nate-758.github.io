@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="View your ChronoConnections game statistics and recent results." data-i18n="statsPageDescription" data-i18n-attribute="content">
+  <title data-i18n="statsPageTitle">Statistics — ChronoConnections</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/game-stats.js" defer></script>
+  <script src="../js/statistics.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" /><path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" /><circle cx="20" cy="20" r="3.2" /></svg></span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="../index.html#home" data-i18n="navHome">Home</a>
+        <a href="../index.html#games" data-i18n="navGames">Game modes</a>
+        <a href="statistics.html" aria-current="page" data-i18n="navStats">Statistics</a>
+        <a href="../index.html#about" data-i18n="navAbout">About</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+  <main class="subpage-main section-wrap" id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb" data-i18n="breadcrumbLabel" data-i18n-attribute="aria-label"><a href="../index.html#home" data-i18n="breadcrumbHome">Home</a><span aria-hidden="true">/</span><span aria-current="page" data-i18n="statsTitle">Your statistics</span></nav>
+    <section class="page-hero" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="statsEyebrow">Your journey so far</span></p>
+      <h1 id="page-title" data-i18n="statsTitle">Your statistics</h1>
+      <p class="page-lead" data-i18n="statsDescription">Your games played, personal bests, and progress will be gathered here.</p>
+    </section>
+    <section class="statistics-dashboard" aria-live="polite">
+      <section class="game-statistics" aria-labelledby="connections-statistics-title">
+        <h2 id="connections-statistics-title" data-stats-i18n="connectionsTitle">Historical Connections</h2>
+        <div class="statistics-cards">
+          <article class="statistics-card">
+            <p data-stats-i18n="connectionsPlayed">Games played</p>
+            <strong id="connections-games-played">0</strong>
+          </article>
+          <article class="statistics-card">
+            <p data-stats-i18n="connectionsBest">Personal best</p>
+            <strong id="connections-best-score">0</strong>
+            <span data-stats-i18n="pointsUnit">points</span>
+          </article>
+        </div>
+        <section class="recent-results" aria-labelledby="connections-results-title">
+          <h3 id="connections-results-title" data-stats-i18n="connectionsRecent">Recent results</h3>
+          <p class="statistics-message" id="connections-statistics-message" role="status"></p>
+          <ol id="connections-results-list"></ol>
+        </section>
+      </section>
+      <section class="game-statistics" aria-labelledby="mystery-statistics-title">
+        <h2 id="mystery-statistics-title" data-stats-i18n="mysteryTitle">Mystery Figure</h2>
+        <div class="statistics-cards">
+          <article class="statistics-card">
+            <p data-stats-i18n="mysteryPlayed">Games played</p>
+            <strong id="mystery-games-played">0</strong>
+          </article>
+          <article class="statistics-card">
+            <p data-stats-i18n="mysteryBest">Personal best</p>
+            <strong id="mystery-best-score">0</strong>
+            <span data-stats-i18n="pointsUnit">points</span>
+          </article>
+        </div>
+        <section class="recent-results" aria-labelledby="mystery-results-title">
+          <h3 id="mystery-results-title" data-stats-i18n="mysteryRecent">Recent results</h3>
+          <p class="statistics-message" id="mystery-statistics-message" role="status"></p>
+          <ol id="mystery-results-list"></ol>
+        </section>
+      </section>
+      <section class="game-statistics" aria-labelledby="race-statistics-title">
+        <h2 id="race-statistics-title" data-stats-i18n="raceTitle">Wikipedia Race</h2>
+        <div class="statistics-cards">
+          <article class="statistics-card">
+            <p data-stats-i18n="racePlayed">Games played</p>
+            <strong id="race-games-played">0</strong>
+          </article>
+          <article class="statistics-card">
+            <p data-stats-i18n="raceBest">Personal best</p>
+            <strong id="race-best-score">0</strong>
+            <span data-stats-i18n="pointsUnit">points</span>
+          </article>
+        </div>
+        <section class="recent-results" aria-labelledby="race-results-title">
+          <h3 id="race-results-title" data-stats-i18n="raceRecent">Recent results</h3>
+          <p class="statistics-message" id="race-statistics-message" role="status"></p>
+          <ol id="race-results-list"></ol>
+        </section>
+      </section>
+      <section class="game-statistics" aria-labelledby="timeline-statistics-title">
+        <h2 id="timeline-statistics-title" data-stats-i18n="timelineTitle">Historical Timeline</h2>
+        <div class="statistics-cards">
+          <article class="statistics-card">
+            <p data-stats-i18n="timelinePlayed">Games played</p>
+            <strong id="timeline-games-played">0</strong>
+          </article>
+          <article class="statistics-card">
+            <p data-stats-i18n="timelineBest">Personal best</p>
+            <strong id="timeline-best-score">0</strong>
+            <span data-stats-i18n="pointsUnit">points</span>
+          </article>
+        </div>
+        <section class="recent-results" aria-labelledby="timeline-results-title">
+          <h3 id="timeline-results-title" data-stats-i18n="timelineRecent">Recent results</h3>
+          <p class="statistics-message" id="timeline-statistics-message" role="status"></p>
+          <ol id="timeline-results-list"></ol>
+        </section>
+      </section>
+    </section>
+    <a class="back-link" href="../index.html#games"><span aria-hidden="true">←</span><span data-i18n="backToModes">Back to all game modes</span></a>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner section-wrap">
+      <a class="brand footer-brand" href="../index.html#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" /><path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" /><circle cx="20" cy="20" r="3.2" /></svg></span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <p data-i18n="footerNote">A little closer to the past, together.</p>
+      <span class="footer-copyright">© <span id="current-year"></span> CHRONOCONNECTIONS</span>
+    </div>
+  </footer>
+</body>
+</html>

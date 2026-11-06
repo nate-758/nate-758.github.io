@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Put historical events in chronological order in the Historical Timeline game." data-i18n="timelinePageDescription" data-i18n-attribute="content">
+  <title data-i18n="timelinePageTitle">Historical Timeline — ChronoConnections</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/game-stats.js" defer></script>
+  <script src="../data/historical-timeline-events.js" defer></script>
+  <script src="../js/historical-timeline.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" /><path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" /><circle cx="20" cy="20" r="3.2" /></svg></span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="../index.html#home" data-i18n="navHome">Home</a>
+        <a href="../index.html#games" data-i18n="navGames">Game modes</a>
+        <a href="statistics.html" data-i18n="navStats">Statistics</a>
+        <a href="../index.html#about" data-i18n="navAbout">About</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+  <main class="subpage-main section-wrap" id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb" data-i18n="breadcrumbLabel" data-i18n-attribute="aria-label"><a href="../index.html#home" data-i18n="breadcrumbHome">Home</a><span aria-hidden="true">/</span><a href="../index.html#games" data-i18n="breadcrumbGames">Game modes</a><span aria-hidden="true">/</span><span aria-current="page" data-i18n="timelineTitle">Historical Timeline</span></nav>
+    <section class="page-hero" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="timelineEyebrow">Game mode 04</span></p>
+      <h1 id="page-title" data-i18n="timelineTitle">Historical Timeline</h1>
+      <p class="page-lead" data-i18n="timelineDescription">Put pivotal moments in order and see the bigger picture.</p>
+    </section>
+    <section class="timeline-game">
+      <div class="challenge-panel">
+        <div class="challenge-heading timeline-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span><span data-timeline-i18n="challengeEyebrow">Timeline challenge</span></p>
+            <h2 data-timeline-i18n="gameTitle">Put the events in order</h2>
+          </div>
+          <div class="timeline-header-tools">
+            <label class="difficulty-control">
+              <span data-timeline-i18n="difficultyLabel">Difficulty</span>
+              <select id="timeline-difficulty">
+                <option value="easy" data-timeline-i18n="easy">Easy</option>
+                <option value="medium" data-timeline-i18n="medium">Medium</option>
+                <option value="hard" data-timeline-i18n="hard">Hard</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <p class="game-instructions" data-timeline-i18n="instructions">Arrange the events from earliest to latest. Drag cards or use the arrow buttons, then check your order. Each incorrect check costs 10 points; a correct order earns the points you have left, up to 100.</p>
+        <div class="timeline-progress">
+          <span data-timeline-i18n="eventsLabel">Events</span>
+          <strong id="timeline-event-count">0</strong>
+          <span class="timeline-hint" data-timeline-i18n="orderHint">Earliest to latest</span>
+        </div>
+        <div class="timeline-feedback-row">
+          <p class="game-feedback timeline-feedback" id="timeline-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+          <div class="timeline-score" aria-label="Score">
+            <span data-timeline-i18n="pointsLabel">Points</span>
+            <span class="timeline-score-value-wrap">
+              <strong id="timeline-score-value">100</strong>
+              <span class="timeline-score-penalty" id="timeline-score-penalty" aria-hidden="true">-10</span>
+            </span>
+          </div>
+        </div>
+        <p class="timeline-zero-toast" id="timeline-zero-toast" role="status" aria-live="assertive" hidden data-timeline-i18n="outOfPoints">No points left. Revealing the correct timeline…</p>
+        <ol class="timeline-list" id="timeline-list" aria-label="Events to order"></ol>
+        <div class="game-actions timeline-actions">
+          <button class="primary-button game-button" id="timeline-submit" type="button" data-timeline-i18n="submit">Check my order</button>
+          <button class="secondary-button" id="timeline-next" type="button" data-timeline-i18n="nextChallenge" disabled>New challenge</button>
+        </div>
+      </div>
+      <aside class="game-guide">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-timeline-i18n="howToPlayEyebrow">How to play</span></p>
+        <ol>
+          <li data-timeline-i18n="howToPlayOne">Put the events in chronological order.</li>
+          <li data-timeline-i18n="howToPlayTwo">Drag a card or use its up and down buttons.</li>
+          <li data-timeline-i18n="howToPlayThree">Check how many events are in the right place; finish the order to reveal dates and sources.</li>
+        </ol>
+        <p class="dataset-note" data-timeline-i18n="scoreNote">The maximum score is 100 points. Each incorrect check costs 10 points; correct checks are never penalized.</p>
+        <p class="dataset-note" data-timeline-i18n="sourceNote">Sources are shown with the answers.</p>
+      </aside>
+    </section>
+    <a class="back-link" href="../index.html#games"><span aria-hidden="true">←</span><span data-i18n="backToModes">Back to all game modes</span></a>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner section-wrap">
+      <a class="brand footer-brand" href="../index.html#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" /><path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" /><circle cx="20" cy="20" r="3.2" /></svg></span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <p data-i18n="footerNote">A little closer to the past, together.</p>
+      <span class="footer-copyright">© <span id="current-year"></span> CHRONOCONNECTIONS</span>
+    </div>
+  </footer>
+</body>
+</html>

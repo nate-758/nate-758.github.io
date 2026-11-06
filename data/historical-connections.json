@@ -1,0 +1,282 @@
+{
+  "figures": [
+    {
+      "id": "socrates",
+      "name": {
+        "en": "Socrates",
+        "fr": "Socrate"
+      }
+    },
+    {
+      "id": "plato",
+      "name": {
+        "en": "Plato",
+        "fr": "Platon"
+      }
+    },
+    {
+      "id": "aristotle",
+      "name": {
+        "en": "Aristotle",
+        "fr": "Aristote"
+      }
+    },
+    {
+      "id": "alexander",
+      "name": {
+        "en": "Alexander the Great",
+        "fr": "Alexandre le Grand"
+      }
+    },
+    {
+      "id": "philip-ii",
+      "name": {
+        "en": "Philip II of Macedon",
+        "fr": "Philippe II de Macédoine"
+      }
+    },
+    {
+      "id": "theophrastus",
+      "name": {
+        "en": "Theophrastus",
+        "fr": "Théophraste"
+      }
+    },
+    {
+      "id": "hermeias",
+      "name": {
+        "en": "Hermeias of Atarneus",
+        "fr": "Hermias d’Atarnée"
+      }
+    },
+    {
+      "id": "pythias",
+      "name": {
+        "en": "Pythias",
+        "fr": "Pythias"
+      }
+    },
+    {
+      "id": "denis-diderot",
+      "name": {
+        "en": "Denis Diderot",
+        "fr": "Denis Diderot"
+      }
+    },
+    {
+      "id": "jean-jacques-rousseau",
+      "name": {
+        "en": "Jean-Jacques Rousseau",
+        "fr": "Jean-Jacques Rousseau"
+      }
+    },
+    {
+      "id": "jean-le-rond-dalembert",
+      "name": {
+        "en": "Jean le Rond d'Alembert",
+        "fr": "Jean le Rond d’Alembert"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from": "socrates",
+      "to": "plato",
+      "type": {
+        "en": "Philosophical association",
+        "fr": "Association philosophique"
+      },
+      "description": {
+        "en": "Plato wrote philosophical dialogues featuring Socrates. Scholars use these works as major sources for studying Socrates, while noting that the historical Socrates is difficult to separate from Plato’s portrayal.",
+        "fr": "Platon a écrit des dialogues philosophiques mettant en scène Socrate. Ces œuvres sont des sources majeures pour étudier Socrate, même si les chercheurs soulignent qu’il est difficile de distinguer le Socrate historique du personnage décrit par Platon."
+      },
+      "sources": [
+        "sep-socrates"
+      ]
+    },
+    {
+      "from": "plato",
+      "to": "aristotle",
+      "type": {
+        "en": "Student and teacher",
+        "fr": "Élève et maître"
+      },
+      "description": {
+        "en": "Aristotle studied in Plato’s Academy in Athens for about twenty years, beginning when he was around seventeen.",
+        "fr": "Aristote a étudié à l’Académie de Platon à Athènes pendant environ vingt ans, à partir de l’âge de dix-sept ans."
+      },
+      "sources": [
+        "sep-plato",
+        "sep-aristotle"
+      ]
+    },
+    {
+      "from": "aristotle",
+      "to": "alexander",
+      "type": {
+        "en": "Tutor and student",
+        "fr": "Précepteur et élève"
+      },
+      "description": {
+        "en": "Aristotle went to Macedon in 343 BCE to tutor the young Alexander. The extent and duration of their lessons are debated by historians.",
+        "fr": "Aristote se rendit en Macédoine en 343 av. J.-C. pour instruire le jeune Alexandre. Les historiens débattent de la durée et de l’ampleur de cet enseignement."
+      },
+      "sources": [
+        "sep-aristotle"
+      ]
+    },
+    {
+      "from": "alexander",
+      "to": "philip-ii",
+      "type": {
+        "en": "Father and son",
+        "fr": "Père et fils"
+      },
+      "description": {
+        "en": "Philip II of Macedon was Alexander’s father. Aristotle’s biography identifies Alexander as Philip’s thirteen-year-old son when Aristotle was asked to tutor him.",
+        "fr": "Philippe II de Macédoine était le père d’Alexandre. La biographie d’Aristote présente Alexandre comme le fils de treize ans de Philippe lorsque celui-ci demanda à Aristote de l’instruire."
+      },
+      "sources": [
+        "sep-aristotle"
+      ]
+    },
+    {
+      "from": "aristotle",
+      "to": "theophrastus",
+      "type": {
+        "en": "Research collaborators",
+        "fr": "Collaborateurs de recherche"
+      },
+      "description": {
+        "en": "Aristotle and Theophrastus worked together on philosophical and empirical research in Lesbos. The Stanford Encyclopedia describes them as colleagues, not simply as teacher and pupil.",
+        "fr": "Aristote et Théophraste ont mené ensemble des recherches philosophiques et empiriques à Lesbos. La Stanford Encyclopedia les décrit comme des collègues, et non simplement comme un maître et son élève."
+      },
+      "sources": [
+        "sep-aristotle",
+        "sep-theophrastus"
+      ]
+    },
+    {
+      "from": "aristotle",
+      "to": "hermeias",
+      "type": {
+        "en": "Host and guest",
+        "fr": "Hôte et invité"
+      },
+      "description": {
+        "en": "Aristotle stayed in Assos with Hermeias, whom the Stanford Encyclopedia identifies as his host, friend, and a former member of Plato’s Academy.",
+        "fr": "Aristote séjourna à Assos chez Hermias, que la Stanford Encyclopedia présente comme son hôte, son ami et un ancien membre de l’Académie de Platon."
+      },
+      "sources": [
+        "sep-aristotle"
+      ]
+    },
+    {
+      "from": "aristotle",
+      "to": "pythias",
+      "type": {
+        "en": "Spouses",
+        "fr": "Époux"
+      },
+      "description": {
+        "en": "Aristotle married Pythias while in Lesbos. The source identifies her as Hermeias’s niece.",
+        "fr": "Aristote épousa Pythias lors de son séjour à Lesbos. La source précise qu’elle était la nièce d’Hermias."
+      },
+      "sources": [
+        "sep-aristotle"
+      ]
+    },
+    {
+      "from": "hermeias",
+      "to": "pythias",
+      "type": {
+        "en": "Uncle and niece",
+        "fr": "Oncle et nièce"
+      },
+      "description": {
+        "en": "Pythias was the niece of Hermeias of Atarneus, according to the Stanford Encyclopedia’s account of Aristotle’s life.",
+        "fr": "Pythias était la nièce d’Hermias d’Atarnée, selon le récit de la vie d’Aristote publié par la Stanford Encyclopedia."
+      },
+      "sources": [
+        "sep-aristotle"
+      ]
+    },
+    {
+      "from": "denis-diderot",
+      "to": "jean-jacques-rousseau",
+      "type": {
+        "en": "Friends and fellow philosophers",
+        "fr": "Amis et philosophes"
+      },
+      "description": {
+        "en": "Diderot met Rousseau in 1742. Rousseau later recalled their relationship in his Confessions.",
+        "fr": "Diderot rencontra Rousseau en 1742. Rousseau évoqua plus tard leur relation dans ses Confessions."
+      },
+      "sources": [
+        "sep-diderot"
+      ]
+    },
+    {
+      "from": "denis-diderot",
+      "to": "jean-le-rond-dalembert",
+      "type": {
+        "en": "Co-editors of the Encyclopédie",
+        "fr": "Codirecteurs de l’Encyclopédie"
+      },
+      "description": {
+        "en": "Diderot and d'Alembert were selected to edit the Encyclopédie, a major project of the French Enlightenment.",
+        "fr": "Diderot et d’Alembert furent choisis pour diriger l’Encyclopédie, un grand projet des Lumières françaises."
+      },
+      "sources": [
+        "sep-diderot"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sep-socrates",
+      "title": {
+        "en": "Socrates",
+        "fr": "Socrate"
+      },
+      "organization": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/socrates/"
+    },
+    {
+      "id": "sep-plato",
+      "title": {
+        "en": "Plato",
+        "fr": "Platon"
+      },
+      "organization": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/plato/"
+    },
+    {
+      "id": "sep-aristotle",
+      "title": {
+        "en": "Aristotle",
+        "fr": "Aristote"
+      },
+      "organization": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/aristotle/"
+    },
+    {
+      "id": "sep-theophrastus",
+      "title": {
+        "en": "Theophrastus",
+        "fr": "Théophraste"
+      },
+      "organization": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/theophrastus/"
+    },
+    {
+      "id": "sep-diderot",
+      "title": {
+        "en": "Denis Diderot",
+        "fr": "Denis Diderot"
+      },
+      "organization": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/diderot/"
+    }
+  ]
+}

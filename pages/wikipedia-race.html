@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Race between Wikipedia articles using their internal links." data-i18n="racePageDescription" data-i18n-attribute="content">
+  <title data-i18n="racePageTitle">Wikipedia Race — ChronoConnections</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/game-stats.js" defer></script>
+  <script src="../data/wikipedia-race-challenges.js" defer></script>
+  <script src="../js/wikipedia-race.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" /><path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" /><circle cx="20" cy="20" r="3.2" /></svg></span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="../index.html#home" data-i18n="navHome">Home</a>
+        <a href="../index.html#games" data-i18n="navGames">Game modes</a>
+        <a href="statistics.html" data-i18n="navStats">Statistics</a>
+        <a href="../index.html#about" data-i18n="navAbout">About</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+  <main class="subpage-main section-wrap race-page-main" id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb" data-i18n="breadcrumbLabel" data-i18n-attribute="aria-label"><a href="../index.html#home" data-i18n="breadcrumbHome">Home</a><span aria-hidden="true">/</span><a href="../index.html#games" data-i18n="breadcrumbGames">Game modes</a><span aria-hidden="true">/</span><span aria-current="page" data-i18n="raceTitle">Wikipedia Race</span></nav>
+    <section class="page-hero" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="raceEyebrow">Game mode 02</span></p>
+      <h1 id="page-title" data-i18n="raceTitle">Wikipedia Race</h1>
+      <p class="page-lead" data-i18n="raceDescription">Race between Wikipedia articles by following their internal links.</p>
+    </section>
+    <section class="race-game">
+      <div class="challenge-panel">
+        <div class="challenge-heading race-challenge-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span><span data-race-i18n="challengeEyebrow">Your race</span></p>
+            <h2><span data-race-i18n="startLabel">Start</span> <span class="challenge-person" id="race-start">Loading…</span></h2>
+          </div>
+          <div class="race-target">
+            <span data-race-i18n="destinationLabel">Destination</span>
+            <strong id="race-target">Loading…</strong>
+          </div>
+        </div>
+        <p class="game-instructions" data-race-i18n="instructions">Article links count as clicks; section-guide jumps are free. Back returns to the previous article and undoes that click. Changing language restarts the race.</p>
+        <div class="race-status-row">
+          <span><span data-race-i18n="clicksLabel">Clicks</span> <strong id="race-click-count">0</strong></span>
+          <button class="secondary-button" id="race-restart" type="button" data-race-i18n="restart">Restart race</button>
+        </div>
+        <p class="game-feedback" id="race-feedback" role="status" aria-live="polite"></p>
+        <article class="race-article" aria-labelledby="race-article-title">
+          <div class="race-reader-layout" id="race-reader-layout" data-width="wide">
+            <nav class="race-section-nav" id="race-section-nav" aria-label="Article sections" hidden>
+              <div class="race-sidebar-heading">
+                <h4 data-race-i18n="contentsTitle">Contents</h4>
+                <button class="race-section-toggle" id="race-section-toggle" type="button" aria-label="Hide contents" aria-expanded="true" aria-controls="race-section-list">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <ol id="race-section-list"></ol>
+            </nav>
+            <div class="race-article-main" id="race-article-content">
+              <nav class="race-history-controls" aria-label="Article history">
+                <button class="race-history-button" id="race-back" type="button" aria-label="Back to previous article" disabled>
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="race-history-button" id="race-forward" type="button" aria-label="Forward to next article" disabled>
+                  <span aria-hidden="true">→</span>
+                </button>
+              </nav>
+              <div class="race-article-heading">
+                <h3 id="race-article-title">Loading article…</h3>
+                <a id="race-wikipedia-link" href="#" target="_blank" rel="noopener noreferrer" hidden data-race-i18n="viewWikipedia">View on Wikipedia</a>
+              </div>
+              <div id="race-extract" class="race-extract"></div>
+            </div>
+            <aside class="race-appearance" aria-labelledby="appearance-title">
+              <div class="race-sidebar-heading">
+                <h4 id="appearance-title" data-race-i18n="appearanceTitle">Appearance</h4>
+                <button class="race-appearance-toggle" id="race-appearance-toggle" type="button" aria-label="Hide appearance" aria-expanded="true" aria-controls="race-appearance-controls">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div id="race-appearance-controls">
+                <fieldset class="race-appearance-control">
+                  <legend data-race-i18n="textSizeLabel">Text size</legend>
+                  <div class="race-appearance-options" role="group" aria-label="Text size">
+                    <button type="button" data-appearance-setting="textSize" data-appearance-value="small" data-race-i18n="textSmall" aria-pressed="false">Small</button>
+                    <button type="button" data-appearance-setting="textSize" data-appearance-value="standard" data-race-i18n="textStandard" aria-pressed="true">Standard</button>
+                    <button type="button" data-appearance-setting="textSize" data-appearance-value="large" data-race-i18n="textLarge" aria-pressed="false">Large</button>
+                  </div>
+                </fieldset>
+                <fieldset class="race-appearance-control">
+                  <legend data-race-i18n="widthLabel">Width</legend>
+                  <div class="race-appearance-options" role="group" aria-label="Width">
+                    <button type="button" data-appearance-setting="width" data-appearance-value="standard" data-race-i18n="widthStandard" aria-pressed="false">Standard</button>
+                    <button type="button" data-appearance-setting="width" data-appearance-value="wide" data-race-i18n="widthWide" aria-pressed="true">Wide</button>
+                  </div>
+                </fieldset>
+                <fieldset class="race-appearance-control">
+                  <legend data-race-i18n="colorLabel">Color</legend>
+                  <div class="race-appearance-options" role="group" aria-label="Color">
+                    <button type="button" data-appearance-setting="color" data-appearance-value="auto" data-race-i18n="colorAuto" aria-pressed="false">Automatic</button>
+                    <button type="button" data-appearance-setting="color" data-appearance-value="light" data-race-i18n="colorLight" aria-pressed="false">Light</button>
+                    <button type="button" data-appearance-setting="color" data-appearance-value="dark" data-race-i18n="colorDark" aria-pressed="true">Dark</button>
+                  </div>
+                </fieldset>
+              </div>
+            </aside>
+          </div>
+        </article>
+        <div class="game-actions">
+          <button class="primary-button game-button" id="race-new-challenge" type="button"><span data-race-i18n="newRace">New race</span><span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+      <aside class="game-guide">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-race-i18n="howToPlayEyebrow">How to play</span></p>
+        <ol>
+          <li data-race-i18n="howToPlayOne">Read the current article and its links.</li>
+          <li data-race-i18n="howToPlayTwo">Article links add a click. Back undoes that click; Forward restores it.</li>
+          <li data-race-i18n="howToPlayThree">Reach the destination using as few clicks as possible.</li>
+        </ol>
+        <p class="dataset-note" data-race-i18n="scoreNote">Your score starts at 100 and decreases by 10 points per click.</p>
+      </div>
+    </section>
+    <a class="back-link" href="../index.html#games"><span aria-hidden="true">←</span><span data-i18n="backToModes">Back to all game modes</span></a>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner section-wrap">
+      <a class="brand footer-brand" href="../index.html#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" /><path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" /><circle cx="20" cy="20" r="3.2" /></svg></span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <p data-i18n="footerNote">A little closer to the past, together.</p>
+      <span class="footer-copyright">© <span id="current-year"></span> CHRONOCONNECTIONS</span>
+    </div>
+  </footer>
+</body>
+</html>

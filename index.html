@@ -1,1 +1,179 @@
-<h1>Coucou<h1></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Explore history through four thoughtful, bilingual game modes." data-i18n="pageDescription" data-i18n-attribute="content">
+  <title data-i18n="pageTitle">ChronoConnections — Play with the past</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" />
+            <path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" />
+            <circle cx="20" cy="20" r="3.2" />
+          </svg>
+        </span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#games" data-i18n="navGames">Game modes</a>
+        <a href="pages/statistics.html" data-i18n="navStats">Statistics</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+      </nav>
+
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">A different way to explore history</span></p>
+        <h1 id="hero-title"><span data-i18n="heroTitleTop">The past is</span><br><span class="title-accent" data-i18n="heroTitleAccent">closer than you think.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Follow the people, moments and ideas that shaped our world. Make connections, uncover clues and see history from a new perspective.</p>
+        <a class="primary-button" href="#games"><span data-i18n="heroButton">Explore the games</span><span aria-hidden="true">↘</span></a>
+        <div class="hero-note">
+          <span class="note-icon" aria-hidden="true">✳</span>
+          <span data-i18n="heroNote">Four ways to journey through time</span>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
+        <div class="art-center">
+          <span class="art-caption" data-i18n="artCaption">HISTORY · HUMANITY · TIME</span>
+          <svg class="compass" viewBox="0 0 240 240" fill="none">
+            <circle cx="120" cy="120" r="91" />
+            <circle cx="120" cy="120" r="74" />
+            <path d="M120 15v20M120 205v20M15 120h20M205 120h20M45.8 45.8l14.1 14.1m120.2 120.2 14.1 14.1m0-148.4-14.1 14.1M59.9 180.1l-14.1 14.1" />
+            <path d="m120 64 16 56-16 56-16-56 16-56Z" />
+            <path d="M120 64v56h16M120 176v-56h-16" />
+            <circle cx="120" cy="120" r="6" />
+          </svg>
+          <span class="art-date" data-i18n="artDate">PAST · PRESENT · FUTURE</span>
+        </div>
+        <span class="art-coordinate coordinate-one">48°51′N</span>
+        <span class="art-coordinate coordinate-two">02°21′E</span>
+        <span class="art-star star-one">✳</span>
+        <span class="art-star star-two">✦</span>
+      </div>
+      <span class="hero-index" aria-hidden="true">01 / 04</span>
+    </section>
+
+    <section class="games-section section-wrap" id="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="gamesEyebrow">Choose your journey</span></p>
+          <h2 id="games-title" data-i18n="gamesTitle">Four paths through time</h2>
+        </div>
+        <p class="section-intro" data-i18n="gamesIntro">Every era has a story. Pick a challenge and discover the threads that connect it all.</p>
+      </div>
+
+      <div class="game-grid">
+        <a class="game-card" href="pages/historical-connections.html" aria-labelledby="connection-title" aria-describedby="connection-description">
+          <div class="card-topline"><span>01</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+          <div class="game-icon connections-icon" aria-hidden="true">
+            <svg viewBox="0 0 56 56" fill="none">
+              <circle cx="13" cy="28" r="6" /><circle cx="43" cy="14" r="6" /><circle cx="43" cy="42" r="6" />
+              <path d="m18.5 25.5 19-9M18.5 30.5l19 9M43 20v16" />
+            </svg>
+          </div>
+          <h3 id="connection-title" data-i18n="connectionTitle">Historical Connections</h3>
+          <p id="connection-description" data-i18n="connectionDescription">Trace the relationships between remarkable people across eras.</p>
+          <span class="game-card-cta"><span data-i18n="exploreMode">Explore mode</span><span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="game-card" href="pages/wikipedia-race.html" aria-labelledby="race-title" aria-describedby="race-description">
+          <div class="card-topline"><span>02</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+          <div class="game-icon race-icon" aria-hidden="true">
+            <svg viewBox="0 0 56 56" fill="none">
+              <circle cx="24" cy="28" r="16" /><path d="M8 28h32M24 12c5 4.5 8 10 8 16s-3 11.5-8 16M24 12c-5 4.5-8 10-8 16s3 11.5 8 16M37 39l7 7 7-7M44 46V29" />
+            </svg>
+          </div>
+          <h3 id="race-title" data-i18n="raceTitle">Wikipedia Race</h3>
+          <p id="race-description" data-i18n="raceDescription">Race from one article to another, one fascinating link at a time.</p>
+          <span class="game-card-cta"><span data-i18n="exploreMode">Explore mode</span><span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="game-card" href="pages/mystery-figure.html" aria-labelledby="mystery-title" aria-describedby="mystery-description">
+          <div class="card-topline"><span>03</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+          <div class="game-icon mystery-icon" aria-hidden="true">
+            <svg viewBox="0 0 56 56" fill="none">
+              <path d="M11 45V21l17-10 17 10v24H11Z" /><path d="M20 45V32a8 8 0 0 1 16 0v13M28 17v4M16 24l4 2m20-2-4 2" /><circle cx="28" cy="29" r="2" />
+            </svg>
+          </div>
+          <h3 id="mystery-title" data-i18n="mysteryTitle">Mystery Figure</h3>
+          <p id="mystery-description" data-i18n="mysteryDescription">Uncover the identity behind the clues before time runs out.</p>
+          <span class="game-card-cta"><span data-i18n="exploreMode">Explore mode</span><span aria-hidden="true">↗</span></span>
+        </a>
+
+        <a class="game-card" href="pages/historical-timeline.html" aria-labelledby="timeline-title" aria-describedby="timeline-description">
+          <div class="card-topline"><span>04</span><span class="card-symbol" aria-hidden="true">↗</span></div>
+          <div class="game-icon timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 56 56" fill="none">
+              <path d="M9 28h38M15 21v14m13-21v28m13-21v14" /><circle cx="15" cy="28" r="3" /><circle cx="28" cy="14" r="3" /><circle cx="28" cy="42" r="3" /><circle cx="41" cy="28" r="3" />
+            </svg>
+          </div>
+          <h3 id="timeline-title" data-i18n="timelineTitle">Historical Timeline</h3>
+          <p id="timeline-description" data-i18n="timelineDescription">Put pivotal moments in order and see the bigger picture.</p>
+          <span class="game-card-cta"><span data-i18n="exploreMode">Explore mode</span><span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-inner section-wrap">
+        <div class="about-emblem" aria-hidden="true">
+          <span class="emblem-ring"></span>
+          <span class="emblem-spark">✳</span>
+          <span class="emblem-caption" data-i18n="emblemCaption">PAST · PRESENT · POSSIBILITY</span>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="aboutEyebrow">History, made personal</span></p>
+          <h2 id="about-title" data-i18n="aboutTitle">The stories that connect us.</h2>
+          <p data-i18n="aboutDescription">ChronoConnections turns history into an invitation to explore. Discover meaningful links between people and events, and follow your curiosity across time.</p>
+          <div class="about-values">
+            <span><span aria-hidden="true">✳</span><span data-i18n="valueCuriosity">Curiosity first</span></span>
+            <span><span aria-hidden="true">✳</span><span data-i18n="valueGrounded">Grounded in sources</span></span>
+            <span><span aria-hidden="true">✳</span><span data-i18n="valueBilingual">Made for everyone</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner section-wrap">
+      <a class="brand footer-brand" href="#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" />
+            <path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" />
+            <circle cx="20" cy="20" r="3.2" />
+          </svg>
+        </span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <p data-i18n="footerNote">A little closer to the past, together.</p>
+      <span class="footer-copyright">© <span id="current-year">2025</span> CHRONOCONNECTIONS</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,246 @@
+{
+  "figures": [
+    {
+      "id": "marie-curie",
+      "name": {
+        "en": "Marie Curie",
+        "fr": "Marie Curie"
+      },
+      "aliases": {
+        "en": ["Maria Skłodowska", "Marie Skłodowska-Curie"],
+        "fr": ["Maria Skłodowska", "Marie Skłodowska-Curie"]
+      },
+      "difficulty": "easy",
+      "clues": [
+        {
+          "en": "I was born in Warsaw in 1867.",
+          "fr": "Je suis née à Varsovie en 1867."
+        },
+        {
+          "en": "I moved to Paris in 1891 to continue my studies.",
+          "fr": "Je suis venue à Paris en 1891 pour poursuivre mes études."
+        },
+        {
+          "en": "I studied physics and mathematics at the Sorbonne.",
+          "fr": "J’ai étudié la physique et les mathématiques à la Sorbonne."
+        },
+        {
+          "en": "My research with Pierre Curie led to the isolation of polonium and radium.",
+          "fr": "Mes recherches avec Pierre Curie ont mené à l’isolement du polonium et du radium."
+        },
+        {
+          "en": "I shared the 1903 Nobel Prize in Physics and received the 1911 Nobel Prize in Chemistry.",
+          "fr": "J’ai partagé le prix Nobel de physique de 1903 et reçu celui de chimie en 1911."
+        }
+      ],
+      "summary": {
+        "en": "A physicist and chemist, Marie Curie pioneered research on radioactivity. She was the first woman to receive a Nobel Prize and remains the only person awarded Nobel Prizes in two different scientific fields.",
+        "fr": "Physicienne et chimiste, Marie Curie a ouvert la voie à l’étude de la radioactivité. Première femme à recevoir un prix Nobel, elle demeure la seule personne récompensée dans deux disciplines scientifiques différentes."
+      },
+      "sources": ["nobel-marie"]
+    },
+    {
+      "id": "voltaire",
+      "name": {
+        "en": "Voltaire",
+        "fr": "Voltaire"
+      },
+      "aliases": {
+        "en": ["François-Marie Arouet", "Arouet"],
+        "fr": ["François-Marie Arouet", "Arouet"]
+      },
+      "difficulty": "easy",
+      "clues": [
+        {
+          "en": "I was born in Paris in 1694.",
+          "fr": "Je suis né à Paris en 1694."
+        },
+        {
+          "en": "My birth name was François-Marie d’Arouet.",
+          "fr": "À ma naissance, je m’appelais François-Marie d’Arouet."
+        },
+        {
+          "en": "I studied at the Jesuit Collège Louis-le-Grand.",
+          "fr": "J’ai étudié au collège jésuite Louis-le-Grand."
+        },
+        {
+          "en": "I spent part of 1726–1729 in exile in England.",
+          "fr": "J’ai vécu en exil en Angleterre de 1726 à 1729."
+        },
+        {
+          "en": "My Lettres philosophiques appeared in 1734.",
+          "fr": "Mes Lettres philosophiques ont paru en 1734."
+        }
+      ],
+      "summary": {
+        "en": "Voltaire was the pen name of French writer and philosopher François-Marie Arouet. His plays, histories, and works of criticism made him a prominent voice of the Enlightenment.",
+        "fr": "Voltaire était le nom de plume de l’écrivain et philosophe français François-Marie Arouet. Ses pièces, ses ouvrages historiques et ses textes critiques ont fait de lui une grande figure des Lumières."
+      },
+      "sources": ["sep-voltaire"]
+    },
+    {
+      "id": "denis-diderot",
+      "name": {
+        "en": "Denis Diderot",
+        "fr": "Denis Diderot"
+      },
+      "aliases": {
+        "en": ["Diderot"],
+        "fr": ["Diderot"]
+      },
+      "difficulty": "medium",
+      "clues": [
+        {
+          "en": "I was born in Langres in 1713.",
+          "fr": "Je suis né à Langres en 1713."
+        },
+        {
+          "en": "I moved to Paris as a teenager to continue my studies.",
+          "fr": "Je suis parti étudier à Paris alors que j’étais adolescent."
+        },
+        {
+          "en": "I met Jean-Jacques Rousseau in 1742.",
+          "fr": "J’ai rencontré Jean-Jacques Rousseau en 1742."
+        },
+        {
+          "en": "I co-edited the Encyclopédie with Jean le Rond d’Alembert.",
+          "fr": "J’ai codirigé l’Encyclopédie avec Jean le Rond d’Alembert."
+        },
+        {
+          "en": "I was imprisoned at Vincennes for three months in 1749.",
+          "fr": "J’ai été emprisonné à Vincennes pendant trois mois en 1749."
+        }
+      ],
+      "summary": {
+        "en": "Denis Diderot was a French philosopher, writer, and art critic. He helped lead the Encyclopédie, an ambitious work that gathered and organized knowledge during the Enlightenment.",
+        "fr": "Denis Diderot était un philosophe, écrivain et critique d’art français. Il a dirigé l’Encyclopédie, vaste ouvrage qui rassemblait et organisait les connaissances au siècle des Lumières."
+      },
+      "sources": ["sep-diderot"]
+    },
+    {
+      "id": "jean-jacques-rousseau",
+      "name": {
+        "en": "Jean-Jacques Rousseau",
+        "fr": "Jean-Jacques Rousseau"
+      },
+      "aliases": {
+        "en": ["Rousseau"],
+        "fr": ["Rousseau"]
+      },
+      "difficulty": "medium",
+      "clues": [
+        {
+          "en": "I was born in Geneva in 1712.",
+          "fr": "Je suis né à Genève en 1712."
+        },
+        {
+          "en": "My mother died nine days after my birth.",
+          "fr": "Ma mère est morte neuf jours après ma naissance."
+        },
+        {
+          "en": "I left Geneva at the age of sixteen.",
+          "fr": "J’ai quitté Genève à l’âge de seize ans."
+        },
+        {
+          "en": "I won an essay competition organized by the Academy of Dijon in 1750.",
+          "fr": "J’ai remporté un concours de l’Académie de Dijon en 1750."
+        },
+        {
+          "en": "The Social Contract and Émile were both published in 1762.",
+          "fr": "Du contrat social et Émile ont tous deux été publiés en 1762."
+        }
+      ],
+      "summary": {
+        "en": "Jean-Jacques Rousseau was a Genevan philosopher, writer, and composer whose work shaped political thought. His best-known works include The Social Contract and Émile.",
+        "fr": "Jean-Jacques Rousseau était un philosophe, écrivain et compositeur genevois dont les œuvres ont marqué la pensée politique. Parmi ses ouvrages les plus connus figurent Du contrat social et Émile."
+      },
+      "sources": ["sep-rousseau"]
+    },
+    {
+      "id": "pierre-curie",
+      "name": {
+        "en": "Pierre Curie",
+        "fr": "Pierre Curie"
+      },
+      "aliases": {
+        "en": ["Curie"],
+        "fr": ["Curie"]
+      },
+      "difficulty": "hard",
+      "clues": [
+        {
+          "en": "I was born in Paris on May 15, 1859.",
+          "fr": "Je suis né à Paris le 15 mai 1859."
+        },
+        {
+          "en": "I studied crystallography with my brother Jacques.",
+          "fr": "J’ai étudié la cristallographie avec mon frère Jacques."
+        },
+        {
+          "en": "The temperature at which a magnetic material changes properties is named after me.",
+          "fr": "La température à laquelle un matériau magnétique change de propriétés porte mon nom."
+        },
+        {
+          "en": "My wife and I announced the discovery of radium and polonium in 1898.",
+          "fr": "Mon épouse et moi avons annoncé la découverte du radium et du polonium en 1898."
+        },
+        {
+          "en": "I shared the 1903 Nobel Prize in Physics with Marie Curie and Henri Becquerel.",
+          "fr": "J’ai partagé le prix Nobel de physique de 1903 avec Marie Curie et Henri Becquerel."
+        }
+      ],
+      "summary": {
+        "en": "Pierre Curie was a French physicist whose research included crystallography, magnetism, and radioactivity. He shared the 1903 Nobel Prize in Physics with Marie Curie and Henri Becquerel.",
+        "fr": "Pierre Curie était un physicien français dont les recherches portaient notamment sur la cristallographie, le magnétisme et la radioactivité. Il a partagé le prix Nobel de physique de 1903 avec Marie Curie et Henri Becquerel."
+      },
+      "sources": ["nobel-pierre"]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nobel-marie",
+      "title": {
+        "en": "Marie Curie — Biographical",
+        "fr": "Marie Curie — Notice biographique"
+      },
+      "organization": "Nobel Prize",
+      "url": "https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/"
+    },
+    {
+      "id": "nobel-pierre",
+      "title": {
+        "en": "Pierre Curie — Biographical",
+        "fr": "Pierre Curie — Notice biographique"
+      },
+      "organization": "Nobel Prize",
+      "url": "https://www.nobelprize.org/prizes/physics/1903/pierre-curie/biographical/"
+    },
+    {
+      "id": "sep-voltaire",
+      "title": {
+        "en": "Voltaire",
+        "fr": "Voltaire"
+      },
+      "organization": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/voltaire/"
+    },
+    {
+      "id": "sep-diderot",
+      "title": {
+        "en": "Denis Diderot",
+        "fr": "Denis Diderot"
+      },
+      "organization": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/diderot/"
+    },
+    {
+      "id": "sep-rousseau",
+      "title": {
+        "en": "Jean-Jacques Rousseau",
+        "fr": "Jean-Jacques Rousseau"
+      },
+      "organization": "Stanford Encyclopedia of Philosophy",
+      "url": "https://plato.stanford.edu/entries/rousseau/"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="Identify historical figures from progressively revealed clues." data-i18n="mysteryPageDescription" data-i18n-attribute="content">
+  <title data-i18n="mysteryPageTitle">Mystery Figure — ChronoConnections</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/game-stats.js" defer></script>
+  <script src="../js/mystery-figure.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../index.html#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" /><path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" /><circle cx="20" cy="20" r="3.2" /></svg></span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="../index.html#home" data-i18n="navHome">Home</a>
+        <a href="../index.html#games" data-i18n="navGames">Game modes</a>
+        <a href="statistics.html" data-i18n="navStats">Statistics</a>
+        <a href="../index.html#about" data-i18n="navAbout">About</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Choose language">
+        <button type="button" class="language-button is-active" data-language="en" aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language-button" data-language="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+  <main class="subpage-main section-wrap" id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb" data-i18n="breadcrumbLabel" data-i18n-attribute="aria-label"><a href="../index.html#home" data-i18n="breadcrumbHome">Home</a><span aria-hidden="true">/</span><a href="../index.html#games" data-i18n="breadcrumbGames">Game modes</a><span aria-hidden="true">/</span><span aria-current="page" data-i18n="mysteryTitle">Mystery Figure</span></nav>
+    <section class="page-hero game-page-hero" aria-labelledby="page-title">
+      <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="mysteryEyebrow">Game mode 03</span></p>
+      <h1 id="page-title" data-i18n="mysteryTitle">Mystery Figure</h1>
+      <p class="page-lead" data-i18n="mysteryDescription">Identify historical figures from clues and earn more points with early answers.</p>
+    </section>
+    <section class="mystery-game" aria-labelledby="mystery-game-title">
+      <div class="challenge-panel">
+        <div class="mystery-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span><span data-game-i18n="challengeEyebrow">Mystery challenge</span></p>
+            <h2 id="mystery-game-title" data-game-i18n="gameTitle">Who am I?</h2>
+          </div>
+          <label class="difficulty-control">
+            <span data-game-i18n="difficultyLabel">Difficulty</span>
+            <select id="difficulty-select">
+              <option value="easy" data-game-i18n="easy">Easy</option>
+              <option value="medium" data-game-i18n="medium">Medium</option>
+              <option value="hard" data-game-i18n="hard">Hard</option>
+            </select>
+          </label>
+        </div>
+        <p class="game-instructions" data-game-i18n="instructions">Reveal clues one at a time. Earlier correct answers earn more points.</p>
+        <div class="clue-progress">
+          <span data-game-i18n="clueLabel">Clue</span>
+          <strong id="clue-count">0 / 5</strong>
+          <span class="clue-score" id="clue-score"></span>
+        </div>
+        <ol class="clue-list" id="clue-list" aria-live="polite"></ol>
+        <div class="mystery-actions">
+          <button class="primary-button game-button" id="reveal-clue" type="button"><span data-game-i18n="revealClue">Reveal next clue</span><span aria-hidden="true">＋</span></button>
+          <button class="secondary-button" id="give-up" type="button" data-game-i18n="giveUp">Show answer</button>
+        </div>
+        <div class="guess-area">
+          <h3 data-game-i18n="guessPrompt">Choose the historical figure</h3>
+          <div class="guess-options" id="guess-options" role="group" aria-label="Choose an answer"></div>
+        </div>
+        <p class="game-feedback" id="mystery-feedback" role="status" aria-live="polite"></p>
+        <div class="mystery-actions">
+          <button class="secondary-button" id="next-mystery" type="button" data-game-i18n="nextChallenge" disabled>Next challenge</button>
+        </div>
+      </div>
+      <aside class="game-guide">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-game-i18n="howToPlayEyebrow">How to play</span></p>
+        <ol>
+          <li data-game-i18n="howToPlayOne">Read each clue as it appears.</li>
+          <li data-game-i18n="howToPlayTwo">Choose the figure you think it describes.</li>
+          <li data-game-i18n="howToPlayThree">Earn 5 points on clue one, down to 1 point on clue five.</li>
+          <li data-game-i18n="howToPlayFour">Each wrong guess costs 1 point.</li>
+        </ol>
+        <p class="dataset-note" data-game-i18n="sourceNote">Every answer includes a source for further reading.</p>
+      </aside>
+    </section>
+    <a class="back-link" href="../index.html#games"><span aria-hidden="true">←</span><span data-i18n="backToModes">Back to all game modes</span></a>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner section-wrap">
+      <a class="brand footer-brand" href="../index.html#home" aria-label="ChronoConnections home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4.5 31.7 11v18L20 35.5 8.3 29V11L20 4.5Z" /><path d="M20 11v18M11.5 15.5l17 9M28.5 15.5l-17 9" /><circle cx="20" cy="20" r="3.2" /></svg></span>
+        <span class="brand-name">CHRONO<span>CONNECTIONS</span></span>
+      </a>
+      <p data-i18n="footerNote">A little closer to the past, together.</p>
+      <span class="footer-copyright">© <span id="current-year"></span> CHRONOCONNECTIONS</span>
+    </div>
+  </footer>
+</body>
+</html>
